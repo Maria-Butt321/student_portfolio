@@ -1,4 +1,87 @@
 /* Shared stylesheet placeholder */
+/* ========== Global Styles ========== */
 body {
-  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #292a0f;
+  color: blue;
+}
+
+/* ========== Header ========== */
+.page-header {
+  text-align: center;
+  padding: 80px 20px 40px;
+}
+
+.page-header h1 {
+  font-size: 2.8rem;
+  color: #22d3ee;
+  font-weight: 600;
+}
+
+.page-header p {
+  color: #94a3b8;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+/* ========== Container Layout ========== */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+/* ========== Achievement Cards ========== */
+.achievement-card {
+  background-color: #1e293b;
+  border-radius: 16px;
+  padding: 30px 25px;
+  text-align: center;
+  box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+  transition: all 0.3s ease-in-out;
+}
+
+.achievement-card:hover {
+  transform: translateY(-5px);
+  background-color: #334155;
+  box-shadow: 0 6px 18px rgba(0, 255, 255, 0.1);
+}
+
+.achievement-card .icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.achievement-card h2 {
+  color: #22d3ee;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.achievement-card p {
+  color: #cbd5e1;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* ========== Footer ========== */
+.footer {
+  text-align: center;
+  border-top: 1px solid #334155;
+  padding: 25px 10px;
+  color: #94a3b8;
+}
+
+.footer a {
+  color: #22d3ee;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
 }
