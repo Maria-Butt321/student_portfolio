@@ -1,10 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Project Page</title>
-  <link rel="stylesheet" href="../styles/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Projects | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #0f172a;
+      color: #f1f5f9;
+      font-family: 'Poppins', sans-serif;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      transition: all 0.3s ease-in-out;
+      box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
+    }
+  </style>
 </head>
 <body>
-  <h1>Project Page Placeholder</h1>
+  <!-- Header -->
+  <header class="text-center py-10">
+    <h1 class="text-4xl font-bold text-cyan-400">My GitHub Projects</h1>
+    <p class="text-gray-400 mt-2">Explore my recent web and coding projects</p>
+  </header>
+
+  <!-- Projects Section -->
+  <section class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6 pb-20">
+    
+    <!-- Project Card 1 -->
+    <div class="card bg-slate-800 rounded-2xl p-6 hover:bg-slate-700">
+      <h2 class="text-xl font-semibold text-cyan-300">Bus Reservation System (C++)</h2>
+      <p class="mt-2 text-gray-300 text-sm">
+        A console-based system that allows passengers to book, cancel, and view bus reservations efficiently.
+      </p>
+      <a href="https://github.com/yourusername/bus-reservation" target="_blank"
+         class="inline-block mt-4 text-cyan-400 hover:text-cyan-200 transition">🔗 View on GitHub</a>
+    </div>
+
+    <!-- Project Card 2 -->
+    <div class="card bg-slate-800 rounded-2xl p-6 hover:bg-slate-700">
+      <h2 class="text-xl font-semibold text-cyan-300">Quiz Game (C++)</h2>
+      <p class="mt-2 text-gray-300 text-sm">
+        Interactive C++ quiz game that tests general knowledge with score tracking and replay features.
+      </p>
+      <a href="https://github.com/yourusername/quiz-game" target="_blank"
+         class="inline-block mt-4 text-cyan-400 hover:text-cyan-200 transition">🔗 View on GitHub</a>
+    </div>
+
+    <!-- Project Card 3 -->
+    <div class="card bg-slate-800 rounded-2xl p-6 hover:bg-slate-700">
+      <h2 class="text-xl font-semibold text-cyan-300">Traffic Management Website</h2>
+      <p class="mt-2 text-gray-300 text-sm">
+        A static website built using HTML, CSS, and JS to promote traffic safety awareness and road management solutions.
+      </p>
+      <a href="https://github.com/yourusername/traffic-management" target="_blank"
+         class="inline-block mt-4 text-cyan-400 hover:text-cyan-200 transition">🔗 View on GitHub</a>
+    </div>
+
+    <!-- Project Card 4 -->
+    <div class="card bg-slate-800 rounded-2xl p-6 hover:bg-slate-700">
+      <h2 class="text-xl font-semibold text-cyan-300">Blood Donation App</h2>
+      <p class="mt-2 text-gray-300 text-sm">
+        Mobile-friendly app for connecting blood donors and recipients with location-based matching.
+      </p>
+      <a href="https://github.com/yourusername/blood-donation-app" target="_blank"
+         class="inline-block mt-4 text-cyan-400 hover:text-cyan-200 transition">🔗 View on GitHub</a>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-gray-500 py-6 border-t border-gray-700">
+    © 2025 Your Name | <a href="https://github.com/yourusername" class="text-cyan-400 hover:text-cyan-200">GitHub</a>
+  </footer>
 </body>
 </html>
